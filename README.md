@@ -28,35 +28,35 @@ Train data: 7010, Test data: 1753.
 Selected features: 330 (SNPs) + 24 (phenotype) = Total 354 features.    
 
 **2.2.2. In cases where FVC is absent:**    
-Total data count: 13505, with 350 LUNG cases (approx. 0.026%).    
-Train data: 10804, Test data: 2701.    
-Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.      
+Total data count: 13505, with 350 LUNG cases (approx. 0.026%).     
+Train data: 10804, Test data: 2701.      
+Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.        
 
-**3. Modeling**    
-Utilized six classification models: RandomForestClassifier, DecisionTreeClassifier, KNeighborsClassifier, AdaboostClassifier, XGBClassifier, and LGBMClassifier. Used Optuna (AutoML technique) to automatically set model parameters to maximize AUC scores.
+**3. Modeling**      
+Utilized six classification models: RandomForestClassifier, DecisionTreeClassifier, KNeighborsClassifier, AdaboostClassifier, XGBClassifier, and LGBMClassifier. Used Optuna (AutoML technique) to automatically set model parameters to maximize AUC scores.    
 
-**3.1. In cases where FVC is present:**
+**3.1. In cases where FVC is present:**   
 
-Random forest: max_depth: 6, max_leaf_nodes: 157, n_estimators: 162, Best AUC: 0.703  
-Decision tree: max_depth: 3, max_leaf_nodes: 970, Best AUC: 0.714  
-KNeighbors: n_neighbors: 182, leaf_size: 184, Best AUC: 0.657  
-Adaboost: n_estimators: 375, Best AUC: 0.668  
-XGBoost: n_estimators: 157, min_child_weight: 156, Best AUC: 0.761  
-LGBM: n_estimators: 59, max_depth: 866, Best AUC: 0.700  
+Random forest: max_depth: 6, max_leaf_nodes: 157, n_estimators: 162, Best AUC: 0.703    
+Decision tree: max_depth: 3, max_leaf_nodes: 970, Best AUC: 0.714    
+KNeighbors: n_neighbors: 182, leaf_size: 184, Best AUC: 0.657    
+Adaboost: n_estimators: 375, Best AUC: 0.668    
+XGBoost: n_estimators: 157, min_child_weight: 156, Best AUC: 0.761    
+LGBM: n_estimators: 59, max_depth: 866, Best AUC: 0.700     
+     
+**3.2. In cases where FVC is absent:**    
+   
+Random forest: max_depth: 2, max_leaf_nodes: 305, n_estimators: 310, Best AUC: 0.745    
+Decision tree: max_depth: 6, max_leaf_nodes: 867, Best AUC: 0.764     
+KNeighbors: n_neighbors: 157, leaf_size: 156, Best AUC: 0.679     
+Adaboost: n_estimators: 59, Best AUC: 0.702     
+XGBoost: n_estimators: 833, min_child_weight: 212, Best AUC: 0.767     
+LGBM: n_estimators: 182, max_depth: 182, Best AUC: 0.754     
 
-**3.2. In cases where FVC is absent:**
+**4. Final AUC Results**    
+FVC Present (354 features): XGBoost: 0.761     
+FVC Absent (424 features): XGBoost: 0.767     
+**In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**   
 
-Random forest: max_depth: 2, max_leaf_nodes: 305, n_estimators: 310, Best AUC: 0.745  
-Decision tree: max_depth: 6, max_leaf_nodes: 867, Best AUC: 0.764  
-KNeighbors: n_neighbors: 157, leaf_size: 156, Best AUC: 0.679  
-Adaboost: n_estimators: 59, Best AUC: 0.702  
-XGBoost: n_estimators: 833, min_child_weight: 212, Best AUC: 0.767  
-LGBM: n_estimators: 182, max_depth: 182, Best AUC: 0.754  
-
-**4. Final AUC Results**
-FVC Present (354 features): XGBoost: 0.761  
-FVC Absent (424 features): XGBoost: 0.767  
-**In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**
-
-### Future Research Plans
+### Future Research Plans   
 In future research, we plan to explore deep learning (classification) or AutoEncoder methods, with the potential to improve AUC values by incorporating more sophisticated features.
