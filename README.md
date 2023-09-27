@@ -38,7 +38,7 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
 **3.1. In cases where FVC is present:**   
 
 |Algorithm|Best trial|Best AUC score|
-|------|---|---|
+|:------:|---|:---:|
 |Random forest|max_depth: 6, max_leaf_nodes: 157, n_estimators: 162|0.703|    
 |Decision tree|max_depth: 3, max_leaf_nodes: 970|0.714|    
 |KNeighbors|n_neighbors: 182, leaf_size: 184|0.657|    
@@ -48,7 +48,7 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
      
 **3.2. In cases where FVC is absent:**    
 |Algorithm|Best trial|Best AUC score|
-|------|---|---|
+|:------:|---|:---:|
 |Random forest|max_depth: 2, max_leaf_nodes: 305, n_estimators: 310|0.745|    
 |Decision tree|max_depth: 6, max_leaf_nodes: 867|0.764|     
 |KNeighbors|n_neighbors: 157, leaf_size: 156|0.679|     
@@ -57,8 +57,8 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
 |LGBM|n_estimators: 182, max_depth: 182|0.754|     
 
 **4. Final AUC Results**    
-FVC Present (354 features): XGBoost: 0.761     
-FVC Absent (424 features): XGBoost: 0.767     
+**FVC Present (354 features): XGBoost: 0.761     
+FVC Absent (424 features): XGBoost: 0.767**     
 **In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**   
 
 ### Future Research Plans   
