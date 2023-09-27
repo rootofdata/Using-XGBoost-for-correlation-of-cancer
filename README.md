@@ -1,5 +1,5 @@
-# Using boosting techniques to analyze and predict the correlation of cancer incidence rates.   
-- 2022_internship_ssu project
+### Using boosting techniques to analyze and predict the correlation of cancer incidence rates.   
+<2022_internship_ssu project>
    
 **1. Research Objectives**   
 To use boosting techniques to reduce bias and bridge the gap between bias and supervised learning in predicting COVID-19 and various disease rates.  
