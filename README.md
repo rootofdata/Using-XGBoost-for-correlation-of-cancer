@@ -30,7 +30,7 @@ Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data.
 
 **2.2.2. In cases where FVC is absent:**    
 - Total data count: 13505, with 350 LUNG cases (approx. 0.026%).     
--- Train data: 10804, Test data: 2701.      
+- Train data: 10804, Test data: 2701.      
 - Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.        
 
 **3. Modeling**      
