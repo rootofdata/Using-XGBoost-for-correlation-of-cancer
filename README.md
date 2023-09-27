@@ -29,8 +29,8 @@ Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data.
 - Selected features: 330 (SNPs) + 24 (phenotype) = Total 354 features.    
 
 **2.2.2. In cases where FVC is absent:**    
---Total data count: 13505, with 350 LUNG cases (approx. 0.026%).     
-- Train data: 10804, Test data: 2701.      
+- Total data count: 13505, with 350 LUNG cases (approx. 0.026%).     
+-- Train data: 10804, Test data: 2701.      
 - Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.        
 
 **3. Modeling**      
@@ -58,10 +58,11 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
 |LGBM|n_estimators: 182, max_depth: 182|0.754|     
 
 **4. Final AUC Results**    
-FVC Present (354 features): **XGBoost: 0.761**     
-FVC Absent (424 features): **XGBoost: 0.767**
+- FVC Present (354 features): **XGBoost: 0.761**     
+- FVC Absent (424 features): **XGBoost: 0.767**
     
 **In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**   
 
-**5. Future Research Plans**
+**5. Future Research Plans**   
+
 In future research, we plan to explore deep learning (classification) or AutoEncoder methods, with the potential to improve AUC values by incorporating more sophisticated features.
