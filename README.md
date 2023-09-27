@@ -64,6 +64,6 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
     
 **In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**   
 
-**5. Future Research Plans**   
+### **5. Future Research Plans**   
 
 In future research, we plan to explore deep learning (classification) or AutoEncoder methods, with the potential to improve AUC values by incorporating more sophisticated features.
