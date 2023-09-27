@@ -21,18 +21,18 @@ Phenotype data included a total of 23 (or 24) variables, as follows:
 AGE_B, SMOK_B, ALCO_B, EXER_B, SBP_B, DBP_B, CHO_B, LDL_B, TG_B, HDL_B, FBS_B, GOT_B, GPT_B, GGT_B, URIC_B, BIL, WBC, CREAT, LUNG, SEX1, CRC, PCAN80, FCAN80, BMI, (FVC if included).
 
 **2.2 Number of Data Features**  
-Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data. Used Lasso to select 300-400 features.  
-**2.2.1. In cases where FVC is present:**  
-Total data count: 8763, with 232 LUNG cases (approx. 0.026%).  
-Train data: 7010, Test data: 1753.  
-Selected features: 330 (SNPs) + 24 (phenotype) = Total 354 features.  
+Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data. Used Lasso to select 300-400 features.   
+**2.2.1. In cases where FVC is present:**   
+Total data count: 8763, with 232 LUNG cases (approx. 0.026%).   
+Train data: 7010, Test data: 1753.   
+Selected features: 330 (SNPs) + 24 (phenotype) = Total 354 features.    
 
-**2.2.2. In cases where FVC is absent:**  
-Total data count: 13505, with 350 LUNG cases (approx. 0.026%).  
-Train data: 10804, Test data: 2701.  
-Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.    
+**2.2.2. In cases where FVC is absent:**    
+Total data count: 13505, with 350 LUNG cases (approx. 0.026%).    
+Train data: 10804, Test data: 2701.    
+Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.      
 
-**3. Modeling**
+**3. Modeling**    
 Utilized six classification models: RandomForestClassifier, DecisionTreeClassifier, KNeighborsClassifier, AdaboostClassifier, XGBClassifier, and LGBMClassifier. Used Optuna (AutoML technique) to automatically set model parameters to maximize AUC scores.
 
 **3.1. In cases where FVC is present:**
