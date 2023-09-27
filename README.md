@@ -24,14 +24,14 @@ AGE_B, SMOK_B, ALCO_B, EXER_B, SBP_B, DBP_B, CHO_B, LDL_B, TG_B, HDL_B, FBS_B, G
 Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data. Used Lasso to select 300-400 features.    
 
 **2.2.1. In cases where FVC is present:**   
-Total data count: 8763, with 232 LUNG cases (approx. 0.026%).   
-Train data: 7010, Test data: 1753.   
-Selected features: 330 (SNPs) + 24 (phenotype) = Total 354 features.    
+- Total data count: 8763, with 232 LUNG cases (approx. 0.026%).   
+- Train data: 7010, Test data: 1753.   
+- Selected features: 330 (SNPs) + 24 (phenotype) = Total 354 features.    
 
 **2.2.2. In cases where FVC is absent:**    
-Total data count: 13505, with 350 LUNG cases (approx. 0.026%).     
-Train data: 10804, Test data: 2701.      
-Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.        
+--Total data count: 13505, with 350 LUNG cases (approx. 0.026%).     
+- Train data: 10804, Test data: 2701.      
+- Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.        
 
 **3. Modeling**      
 Utilized six classification models: RandomForestClassifier, DecisionTreeClassifier, KNeighborsClassifier, AdaboostClassifier, XGBClassifier, and LGBMClassifier. Used Optuna (AutoML technique) to automatically set model parameters to maximize AUC scores.    
@@ -63,5 +63,5 @@ FVC Absent (424 features): **XGBoost: 0.767**
     
 **In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**   
 
-### Future Research Plans   
+**5. Future Research Plans**
 In future research, we plan to explore deep learning (classification) or AutoEncoder methods, with the potential to improve AUC values by incorporating more sophisticated features.
