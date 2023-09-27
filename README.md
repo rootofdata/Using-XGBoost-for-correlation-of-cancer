@@ -1,11 +1,11 @@
-### Using boosting techniques to analyze and predict the correlation of cancer incidence rates.   
+## Using boosting techniques to analyze and predict the correlation of cancer incidence rates.   
 <2022_internship_ssu project>
    
-**1. Research Objectives**   
+### **1. Research Objectives**   
 To use boosting techniques to reduce bias and bridge the gap between bias and supervised learning in predicting COVID-19 and various disease rates.  
 To analyze the relationship between disease rates and explanatory variables.  
    
-**2. Research Content**   
+### **2. Research Content**   
 For various diseases, the study focused on 'LUNG' (lung cancer) and conducted the following steps:   
    
 **2.1 Data Preprocessing**
@@ -34,7 +34,7 @@ Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data.
 - Train data: 10804, Test data: 2701.      
 - Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.        
 
-**3. Modeling**      
+### **3. Modeling**      
 Utilized six classification models: RandomForestClassifier, DecisionTreeClassifier, KNeighborsClassifier, AdaboostClassifier, XGBClassifier, and LGBMClassifier. Used Optuna (AutoML technique) to automatically set model parameters to maximize AUC scores.    
 
 **3.1. In cases where FVC is present:**   
@@ -58,7 +58,7 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
 |XGBoost|n_estimators: 833, min_child_weight: 212|0.767|     
 |LGBM|n_estimators: 182, max_depth: 182|0.754|     
 
-**4. Final AUC Results**    
+### **4. Final AUC Results**    
 - FVC Present (354 features): **XGBoost: 0.761**     
 - FVC Absent (424 features): **XGBoost: 0.767**
     
