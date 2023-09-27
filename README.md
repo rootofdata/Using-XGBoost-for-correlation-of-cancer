@@ -21,7 +21,7 @@ Phenotype data included a total of 23 (or 24) variables, as follows:
 AGE_B, SMOK_B, ALCO_B, EXER_B, SBP_B, DBP_B, CHO_B, LDL_B, TG_B, HDL_B, FBS_B, GOT_B, GPT_B, GGT_B, URIC_B, BIL, WBC, CREAT, LUNG, SEX1, CRC, PCAN80, FCAN80, BMI, (FVC if included).
 
 **2.2 Number of Data Features**  
-Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data. Used Lasso to select 300-400 features.   
+Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data. Used Lasso to select 300-400 features.    
 
 **2.2.1. In cases where FVC is present:**   
 Total data count: 8763, with 232 LUNG cases (approx. 0.026%).   
@@ -58,9 +58,9 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
 |LGBM|n_estimators: 182, max_depth: 182|0.754|     
 
 **4. Final AUC Results**    
-**FVC Present (354 features): XGBoost: 0.761     
-FVC Absent (424 features): XGBoost: 0.767**     
-
+FVC Present (354 features): **XGBoost: 0.761**     
+FVC Absent (424 features): **XGBoost: 0.767**
+    
 **In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**   
 
 ### Future Research Plans   
