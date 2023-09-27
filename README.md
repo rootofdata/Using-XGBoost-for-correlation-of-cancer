@@ -36,13 +36,21 @@ Selected features: 401 (SNPs) + 23 (phenotype) = Total 424 features.
 Utilized six classification models: RandomForestClassifier, DecisionTreeClassifier, KNeighborsClassifier, AdaboostClassifier, XGBClassifier, and LGBMClassifier. Used Optuna (AutoML technique) to automatically set model parameters to maximize AUC scores.    
 
 **3.1. In cases where FVC is present:**   
-
-Random forest: max_depth: 6, max_leaf_nodes: 157, n_estimators: 162, Best AUC: 0.703    
-Decision tree: max_depth: 3, max_leaf_nodes: 970, Best AUC: 0.714    
-KNeighbors: n_neighbors: 182, leaf_size: 184, Best AUC: 0.657    
-Adaboost: n_estimators: 375, Best AUC: 0.668    
-XGBoost: n_estimators: 157, min_child_weight: 156, Best AUC: 0.761    
-LGBM: n_estimators: 59, max_depth: 866, Best AUC: 0.700     
+|제목|내용|설명|
+|Algorithm|Best trial|Best AUC score|
+|------|---|---|
+|Random forest|
+|Decision tree|
+|KNeighbors|
+|Adaboost|
+|XGBoost|
+|LGBM|
+|Random forest|max_depth: 6, max_leaf_nodes: 157, n_estimators: 162|Best AUC: 0.703|    
+|Decision tree|max_depth: 3, max_leaf_nodes: 970|Best AUC: 0.714|    
+|KNeighbors|n_neighbors: 182, leaf_size: 184|Best AUC: 0.657|    
+|Adaboost|n_estimators: 375|Best AUC: 0.668|    
+|XGBoost|n_estimators: 157, min_child_weight: 156|Best AUC: 0.761|    
+|LGBM|n_estimators: 59, max_depth: 866|Best AUC: 0.700|     
      
 **3.2. In cases where FVC is absent:**    
    
