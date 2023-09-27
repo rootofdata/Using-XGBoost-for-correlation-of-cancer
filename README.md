@@ -22,6 +22,7 @@ AGE_B, SMOK_B, ALCO_B, EXER_B, SBP_B, DBP_B, CHO_B, LDL_B, TG_B, HDL_B, FBS_B, G
 
 **2.2 Number of Data Features**  
 Split the data into a 8:2 train-test ratio and combined phenotype and SNPs data. Used Lasso to select 300-400 features.   
+
 **2.2.1. In cases where FVC is present:**   
 Total data count: 8763, with 232 LUNG cases (approx. 0.026%).   
 Train data: 7010, Test data: 1753.   
@@ -59,6 +60,7 @@ Utilized six classification models: RandomForestClassifier, DecisionTreeClassifi
 **4. Final AUC Results**    
 **FVC Present (354 features): XGBoost: 0.761     
 FVC Absent (424 features): XGBoost: 0.767**     
+
 **In conclusion, XGBoost achieved the highest AUC values of 0.761 and 0.767, demonstrating its effectiveness in predicting LUNG, especially when FVC is absent.**   
 
 ### Future Research Plans   
