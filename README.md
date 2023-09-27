@@ -1,12 +1,12 @@
 # 22_internship_ssu
-2022_동계_인턴십_
 
-**1. Research Objectives**
+**1. Research Objectives**   
 To use boosting techniques to reduce bias and bridge the gap between bias and supervised learning in predicting COVID-19 and various disease rates.  
 To analyze the relationship between disease rates and explanatory variables.  
-**2. Research Content**
-For various diseases, the study focused on 'LUNG' (lung cancer) and conducted the following steps:  
-
+   
+**2. Research Content**   
+For various diseases, the study focused on 'LUNG' (lung cancer) and conducted the following steps:   
+   
 **2.1 Data Preprocessing**
 - Removed variables (MDM_B, MHTN_B, MLPD_B, PHTN_B, PDM_B, PLPD_B) with a high number of missing values from the phenotype data, not solely due to missing values but also due to their low correlation or relevance with LUNG.  
 
