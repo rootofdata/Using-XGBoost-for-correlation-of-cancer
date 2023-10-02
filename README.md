@@ -1,6 +1,5 @@
 ## <2022_internship_ssu project>   
-from Fundamental Science Convergence Research Institute
-**Using boosting techniques to analyze and predict the correlation of cancer incidence rates.**
+**Using boosting techniques to analyze and predict the correlation of cancer incidence rates.** from Fundamental Science Convergence Research Institute
    
 ### **1. Research Objectives**   
 To use boosting techniques to reduce bias and bridge the gap between bias and supervised learning in predicting COVID-19 and various disease rates.  
